@@ -14,6 +14,7 @@ public class TestSysInfo {
     @Test
     public void checkSystemVersionTest() {
         logger.debug(SystemInfo.getVersion());
+        logger.debug(SystemInfo.getBuild());
         assertTrue( StringUtils.compare(SystemInfo.getVersion(), "1.0-SNAPSHOT")==0);
     }
 }
